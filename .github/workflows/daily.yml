@@ -1,0 +1,57 @@
+name: Daily Mystic Skill Runner
+
+on:
+  workflow_dispatch:
+  schedule:
+    # 08:20 Asia/Taipei = 00:20 UTC
+    # Avoid top-of-hour GitHub Actions queue pressure.
+    - cron: "20 0 * * *"
+
+jobs:
+  run-skills:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: "npm"
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Cache pip
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: pip-${{ runner.os }}-${{ hashFiles('requirements.txt') }}
+
+      - name: Install Node dependencies
+        run: npm ci || npm install
+
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run all external skills
+        env:
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASS: ${{ secrets.SMTP_PASS }}
+          EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
+          EMAIL_TO: ${{ secrets.EMAIL_TO }}
+        run: python runner/run_all.py
+
+      - name: Upload outputs
+        uses: actions/upload-artifact@v4
+        with:
+          name: mystic-report
+          path: outputs/
+          if-no-files-found: warn
