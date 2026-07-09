@@ -1,0 +1,22 @@
+{
+  "person": {
+    "gender": "female",
+    "birth_solar": "1992-02-10 17:25:00",
+    "true_solar_time": "17:01:00",
+    "birth_place": "Shenzhen Futian, Guangdong",
+    "bazi": "壬申年、壬寅月、甲戌日、癸酉時",
+    "day_master": "甲木",
+    "favorable_elements": ["金", "水"],
+    "unfavorable_elements": ["木", "火"]
+  },
+  "divination_location": {
+    "country": "China",
+    "city": "Shenzhen Longgang",
+    "timezone": "Asia/Shanghai"
+  },
+  "watchlist": ["600183", "002409", "000725", "000021", "HK03121"],
+  "email": {
+    "to": "nuovalee@hotmail.com",
+    "subject_template": "每日玄學盤前起卦｜{date}｜術數×量化×交易節奏"
+  }
+}

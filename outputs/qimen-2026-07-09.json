@@ -1,0 +1,37 @@
+{
+  "mode": "E3_RULE_BASED_QIMEN",
+  "external_error": "RUN_EXTERNAL_FETCH disabled",
+  "date": "2026-07-09",
+  "normalized_input": {
+    "question_type": "daily_market_risk",
+    "question_goal": "盤前交易節奏、風險門、文件門、情緒門、尾盤門",
+    "calendar_type": "solar",
+    "time_input": "2026-07-09 08:30:00",
+    "location": {
+      "country": "China",
+      "city": "Shenzhen Longgang",
+      "timezone": "Asia/Shanghai"
+    },
+    "ruleset": "mainline-cn-v1"
+  },
+  "chart": {
+    "name": "規則化奇門層，不稱完整九宮局",
+    "risk_gate": "午後拉升段，易被分時尖峰誘發錯單",
+    "trading_gate": "先看開盤價、VWAP、成交量；未確認承接不加倉",
+    "document_gate": "利IPO審計底稿、披露差異、證據鏈核對",
+    "communication_gate": "文字確認優先；evidence → analysis → conclusion",
+    "emotion_gate": "防錯過恐懼與追回虧損衝動",
+    "tail_gate": "14:45後偏防守，只處理風險，不新增情緒倉",
+    "bazi_anchor": "壬申年、壬寅月、甲戌日、癸酉時",
+    "favorable_elements": [
+      "金",
+      "水"
+    ]
+  },
+  "warnings": [
+    "qimen_cli.py 未真實成功執行，已啟動 E3 規則化奇門 Runner。",
+    "本輸出不得視為完整九宮奇門盤。"
+  ],
+  "skill": "qimen",
+  "status": "degraded"
+}

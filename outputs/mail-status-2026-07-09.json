@@ -1,0 +1,6 @@
+{
+  "date": "2026-07-09",
+  "status": "skipped",
+  "reason": "missing secrets/env: SMTP_HOST, SMTP_USER, SMTP_PASS, EMAIL_FROM",
+  "to": "nuovalee@hotmail.com"
+}

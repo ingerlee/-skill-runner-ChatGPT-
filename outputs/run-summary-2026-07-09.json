@@ -1,0 +1,90 @@
+{
+  "date": "2026-07-09",
+  "skills": [
+    {
+      "name": "tarot",
+      "status": "success",
+      "command": [
+        "/opt/pyvenv/bin/python3",
+        "runner/skills/tarot_runner.py"
+      ],
+      "stdout": "{\"mode\": \"E3_BUILTIN_TAROT\", \"seed\": 10638060479079291853, \"spread\": \"three\", \"time_factor\": \"morning\", \"cards\": [{\"position\": \"狀態\", \"card\": \"星幣皇后\", \"orientation\": \"正位\", \"is_major\": false}, {\"position\": \"阻力\", \"card\": \"魔術師\", \"orientation\": \"正位\", \"is_major\": true}, {\"position\": \"建議\", \"card\": \"權杖五\", \"orientation\": \"正位\", \"is_major\": false}], \"external_error\": \"RUN_EXTERNAL_FETCH disabled\", \"skill\": \"tarot\", \"status\": \"degraded\", \"date\": \"2026-07-09\"}\n",
+      "stderr": "",
+      "error": null,
+      "started_at": "2026-07-09T13:49:16.850605+08:00",
+      "ended_at": "2026-07-09T13:49:18.703476+08:00",
+      "returncode": 0
+    },
+    {
+      "name": "qimen",
+      "status": "success",
+      "command": [
+        "/opt/pyvenv/bin/python3",
+        "runner/skills/qimen_runner.py"
+      ],
+      "stdout": "{\"mode\": \"E3_RULE_BASED_QIMEN\", \"external_error\": \"RUN_EXTERNAL_FETCH disabled\", \"date\": \"2026-07-09\", \"normalized_input\": {\"question_type\": \"daily_market_risk\", \"question_goal\": \"盤前交易節奏、風險門、文件門、情緒門、尾盤門\", \"calendar_type\": \"solar\", \"time_input\": \"2026-07-09 08:30:00\", \"location\": {\"country\": \"China\", \"city\": \"Shenzhen Longgang\", \"timezone\": \"Asia/Shanghai\"}, \"ruleset\": \"mainline-cn-v1\"}, \"chart\": {\"name\": \"規則化奇門層，不稱完整九宮局\", \"risk_gate\": \"午後拉升段，易被分時尖峰誘發錯單\", \"trading_gate\": \"先看開盤價、VWAP、成交量；未確認承接不加倉\", \"document_gate\": \"利IPO審計底稿、披露差異、證據鏈核對\", \"communication_gate\": \"文字確認優先；evidence → analysis → conclusion\", \"emotion_gate\": \"防錯過恐懼與追回虧損衝動\", \"tail_gate\": \"14:45後偏防守，只處理風險，不新增情緒倉\", \"bazi_anchor\": \"壬申年、壬寅月、甲戌日、癸酉時\", \"favorable_elements\": [\"金\", \"水\"]}, \"warnings\": [\"qimen_cli.py 未真實成功執行，已啟動 E3 規則化奇門 Runner。\", \"本輸出不得視為完整九宮奇門盤。\"], \"skill\": \"qimen\", \"status\": \"degraded\"}\n",
+      "stderr": "",
+      "error": null,
+      "started_at": "2026-07-09T13:49:18.703519+08:00",
+      "ended_at": "2026-07-09T13:49:20.697695+08:00",
+      "returncode": 0
+    },
+    {
+      "name": "ziwei",
+      "status": "success",
+      "command": [
+        "node",
+        "runner/skills/ziwei_runner.mjs"
+      ],
+      "stdout": "{\"skill\":\"ziwei\",\"status\":\"degraded\",\"mode\":\"E3_ZIWEI_SKELETON\",\"date\":\"2026-07-09\",\"external_error\":\"Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'iztro' imported from /mnt/data/mystic-skill-runner/runner/skills/ziwei_runner.mjs\\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:256:9)\\n    at packageResolve (node:internal/modules/esm/resolve:768:81)\\n    at moduleResolve (node:internal/modules/esm/resolve:854:18)\\n    at defaultResolve (node:internal/modules/esm/resolve:984:11)\\n    at ModuleLoader.defaultResolve (node:internal/modules/esm/loader:780:12)\\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:704:25)\\n    at ModuleLoader.resolve (node:internal/modules/esm/loader:687:38)\\n    at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:305:38)\\n    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:643:36)\\n    at TracingChannel.tracePromise (node:diagnostics_channel:344:14)\",\"warning\":\"未能真實調用 iztro 生成完整紫微盤；不輸出未驗證十二宮主星、完整四化落宮或大限宮位。\",\"skeleton\":{\"gender\":\"female\",\"birth_solar\":\"1992-02-10 17:25:00\",\"true_solar_time\":\"17:01:00\",\"birth_place\":\"Shenzhen Futian, Guangdong\",\"bazi\":\"壬申年、壬寅月、甲戌日、癸酉時\",\"day_master\":\"甲木\",\"favorable_elements\":[\"金\",\"水\"],\"unfavorable_elements\":[\"木\",\"火\"],\"layers\":{\"career\":\"利 IPO 審計底稿核對、披露差異與證據鏈整理\",\"wealth\":\"有交易欲，但不宜重倉搏方向；僅做計劃內 T\",\"health_emotion\":\"火土旺，眼壓、焦躁、心火偏高\",\"migration_external\":\"外部科技修復與油價壓制並存\",\"learning\":\"利 IFRS17 / SOA-FSA / IPO 規則框架化\"}}}\n",
+      "stderr": "",
+      "error": null,
+      "started_at": "2026-07-09T13:49:20.697732+08:00",
+      "ended_at": "2026-07-09T13:49:20.824371+08:00",
+      "returncode": 0
+    },
+    {
+      "name": "taibu",
+      "status": "success",
+      "command": [
+        "node",
+        "runner/skills/taibu_runner.mjs"
+      ],
+      "stdout": "{\"skill\":\"taibu\",\"status\":\"degraded\",\"mode\":\"E3_TAIBU_SYMBOLIC_RUNNER\",\"date\":\"2026-07-09\",\"external_error\":\"Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'taibu-core' imported from /mnt/data/mystic-skill-runner/runner/skills/taibu_runner.mjs\\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:256:9)\\n    at packageResolve (node:internal/modules/esm/resolve:768:81)\\n    at moduleResolve (node:internal/modules/esm/resolve:854:18)\\n    at defaultResolve (node:internal/modules/esm/resolve:984:11)\\n    at ModuleLoader.defaultResolve (node:internal/modules/esm/loader:780:12)\\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:704:25)\\n    at ModuleLoader.resolve (node:internal/modules/esm/loader:687:38)\\n    at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:305:38)\\n    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:643:36)\\n    at TracingChannel.tracePromise (node:diagnostics_channel:344:14)\",\"imported_keys\":[],\"warning\":\"未啟動 taibu-mcp stdio server；本輸出為太卜/太乙象意 Runner，不聲稱已調用 MCP 工具。\",\"divination\":{\"main_symbol\":\"火土壓盤，外部風險擾動\",\"change_symbol\":\"科技線有修復，但油價與利率預期壓制風險偏好\",\"risk_symbol\":\"衝高無量易回落，防假突破\",\"action_symbol\":\"等二次確認，不追第一波\",\"stop_symbol\":\"破開盤價 + 破 VWAP + 放量，停止加倉\",\"bazi_anchor\":\"壬申年、壬寅月、甲戌日、癸酉時\",\"favorable_elements\":[\"金\",\"水\"]}}\n",
+      "stderr": "",
+      "error": null,
+      "started_at": "2026-07-09T13:49:20.824416+08:00",
+      "ended_at": "2026-07-09T13:49:20.943989+08:00",
+      "returncode": 0
+    }
+  ],
+  "render": {
+    "name": "render_report",
+    "status": "success",
+    "command": [
+      "/opt/pyvenv/bin/python3",
+      "runner/render_report.py"
+    ],
+    "stdout": "Rendered report-2026-07-09.md\n",
+    "stderr": "",
+    "error": null,
+    "started_at": "2026-07-09T13:49:20.944755+08:00",
+    "ended_at": "2026-07-09T13:49:22.991950+08:00",
+    "returncode": 0
+  },
+  "mail": {
+    "name": "send_email",
+    "status": "success",
+    "command": [
+      "/opt/pyvenv/bin/python3",
+      "runner/mailer.py"
+    ],
+    "stdout": "{\"date\": \"2026-07-09\", \"status\": \"skipped\", \"reason\": \"missing secrets/env: SMTP_HOST, SMTP_USER, SMTP_PASS, EMAIL_FROM\", \"to\": \"nuovalee@hotmail.com\"}\n",
+    "stderr": "",
+    "error": null,
+    "started_at": "2026-07-09T13:49:22.991984+08:00",
+    "ended_at": "2026-07-09T13:49:24.927864+08:00",
+    "returncode": 0
+  },
+  "status": "success"
+}

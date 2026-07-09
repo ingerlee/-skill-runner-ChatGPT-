@@ -1,0 +1,31 @@
+{
+  "skill": "ziwei",
+  "status": "degraded",
+  "mode": "E3_ZIWEI_SKELETON",
+  "date": "2026-07-09",
+  "external_error": "Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'iztro' imported from /mnt/data/mystic-skill-runner/runner/skills/ziwei_runner.mjs\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:256:9)\n    at packageResolve (node:internal/modules/esm/resolve:768:81)\n    at moduleResolve (node:internal/modules/esm/resolve:854:18)\n    at defaultResolve (node:internal/modules/esm/resolve:984:11)\n    at ModuleLoader.defaultResolve (node:internal/modules/esm/loader:780:12)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:704:25)\n    at ModuleLoader.resolve (node:internal/modules/esm/loader:687:38)\n    at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:305:38)\n    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:643:36)\n    at TracingChannel.tracePromise (node:diagnostics_channel:344:14)",
+  "warning": "未能真實調用 iztro 生成完整紫微盤；不輸出未驗證十二宮主星、完整四化落宮或大限宮位。",
+  "skeleton": {
+    "gender": "female",
+    "birth_solar": "1992-02-10 17:25:00",
+    "true_solar_time": "17:01:00",
+    "birth_place": "Shenzhen Futian, Guangdong",
+    "bazi": "壬申年、壬寅月、甲戌日、癸酉時",
+    "day_master": "甲木",
+    "favorable_elements": [
+      "金",
+      "水"
+    ],
+    "unfavorable_elements": [
+      "木",
+      "火"
+    ],
+    "layers": {
+      "career": "利 IPO 審計底稿核對、披露差異與證據鏈整理",
+      "wealth": "有交易欲，但不宜重倉搏方向；僅做計劃內 T",
+      "health_emotion": "火土旺，眼壓、焦躁、心火偏高",
+      "migration_external": "外部科技修復與油價壓制並存",
+      "learning": "利 IFRS17 / SOA-FSA / IPO 規則框架化"
+    }
+  }
+}

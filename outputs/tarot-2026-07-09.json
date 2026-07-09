@@ -1,0 +1,30 @@
+{
+  "mode": "E3_BUILTIN_TAROT",
+  "seed": 10638060479079291853,
+  "spread": "three",
+  "time_factor": "morning",
+  "cards": [
+    {
+      "position": "狀態",
+      "card": "星幣皇后",
+      "orientation": "正位",
+      "is_major": false
+    },
+    {
+      "position": "阻力",
+      "card": "魔術師",
+      "orientation": "正位",
+      "is_major": true
+    },
+    {
+      "position": "建議",
+      "card": "權杖五",
+      "orientation": "正位",
+      "is_major": false
+    }
+  ],
+  "external_error": "RUN_EXTERNAL_FETCH disabled",
+  "skill": "tarot",
+  "status": "degraded",
+  "date": "2026-07-09"
+}

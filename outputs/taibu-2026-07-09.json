@@ -1,0 +1,21 @@
+{
+  "skill": "taibu",
+  "status": "degraded",
+  "mode": "E3_TAIBU_SYMBOLIC_RUNNER",
+  "date": "2026-07-09",
+  "external_error": "Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'taibu-core' imported from /mnt/data/mystic-skill-runner/runner/skills/taibu_runner.mjs\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:256:9)\n    at packageResolve (node:internal/modules/esm/resolve:768:81)\n    at moduleResolve (node:internal/modules/esm/resolve:854:18)\n    at defaultResolve (node:internal/modules/esm/resolve:984:11)\n    at ModuleLoader.defaultResolve (node:internal/modules/esm/loader:780:12)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:704:25)\n    at ModuleLoader.resolve (node:internal/modules/esm/loader:687:38)\n    at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:305:38)\n    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:643:36)\n    at TracingChannel.tracePromise (node:diagnostics_channel:344:14)",
+  "imported_keys": [],
+  "warning": "未啟動 taibu-mcp stdio server；本輸出為太卜/太乙象意 Runner，不聲稱已調用 MCP 工具。",
+  "divination": {
+    "main_symbol": "火土壓盤，外部風險擾動",
+    "change_symbol": "科技線有修復，但油價與利率預期壓制風險偏好",
+    "risk_symbol": "衝高無量易回落，防假突破",
+    "action_symbol": "等二次確認，不追第一波",
+    "stop_symbol": "破開盤價 + 破 VWAP + 放量，停止加倉",
+    "bazi_anchor": "壬申年、壬寅月、甲戌日、癸酉時",
+    "favorable_elements": [
+      "金",
+      "水"
+    ]
+  }
+}
