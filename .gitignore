@@ -1,0 +1,10 @@
+.venv/
+node_modules/
+.env
+.cache/
+outputs/*.json
+outputs/*.md
+outputs/*.html
+!outputs/.gitkeep
+__pycache__/
+*.pyc
